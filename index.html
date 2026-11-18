@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youssef El Kasri — Ingénieur logiciel full stack</title>
+  <meta name="description" content="Portfolio de Youssef El Kasri, ingénieur logiciel full stack à Grenoble : Angular, Java, .NET, Python, Azure, Docker, Kubernetes. Projets : robot IA Ovlik, jeux Frontier et Devil's Path.">
+  <meta name="author" content="Youssef El Kasri">
+  <meta property="og:title" content="Youssef El Kasri — Ingénieur logiciel full stack">
+  <meta property="og:description" content="Du back-end au front-end, jusqu'au cloud. Découvrez mes projets et mon parcours.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/photo.jpg">
+  <meta name="theme-color" content="#0a0c0f">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav">
+    <nav class="container nav__inner" aria-label="Navigation principale">
+      <a href="#accueil" class="nav__logo"><span class="accent">&lt;</span>youssef.elkasri<span class="accent">/&gt;</span></a>
+      <div class="nav__links">
+        <a href="#apropos"><span>01.</span> à_propos</a>
+        <a href="#stack"><span>02.</span> stack</a>
+        <a href="#parcours"><span>03.</span> parcours</a>
+        <a href="#projets"><span>04.</span> projets</a>
+        <a href="#contact" class="nav__cta">./contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="accueil" class="dots-bg">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="prompt">~/grenoble <span class="dollar">$</span> <span class="cmd">whoami</span><span class="caret" aria-hidden="true"></span></p>
+          <h1 class="hero__name">Youssef<br>El Kasri<span class="accent">.</span></h1>
+          <p class="hero__role">Ingénieur logiciel <span class="accent">full stack</span> — du back-end au front-end, jusqu'au cloud.</p>
+          <p class="lead" style="max-width: 580px">Plusieurs années à concevoir des applications web, mobiles et métier, dans des startups, des ESN et de grands groupes industriels.</p>
+          <div class="hero__actions">
+            <a href="#projets" class="btn btn--primary">Voir mes projets
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+            <a href="mailto:elkasri.youssef@outlook.fr" class="btn btn--ghost">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              M'écrire
+            </a>
+            <a href="assets/CV_Youssef_El_Kasri.pdf" class="btn btn--ghost" download>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+              CV (PDF)
+            </a>
+          </div>
+        </div>
+
+        <!-- Scène 3D : cube + grille + fenêtre de code -->
+        <div class="scene" aria-hidden="true">
+          <div class="scene__tilt" id="scene-tilt">
+            <div class="floor"></div>
+            <div class="cube-wrap">
+              <div class="orbit"></div>
+              <div class="cube">
+                <div class="cube__face cube__face--front"><small>front</small>Angular</div>
+                <div class="cube__face cube__face--right"><small>back</small>Java · .NET</div>
+                <div class="cube__face cube__face--back"><small>cloud</small>Azure</div>
+                <div class="cube__face cube__face--left"><small>ops</small>Kubernetes</div>
+                <div class="cube__face cube__face--top"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+            </div>
+            <div class="window hero__code">
+              <div class="window__bar"><span class="window__dot"></span><span class="window__dot"></span><span class="window__dot"></span><span class="window__title">youssef.ts</span></div>
+<pre class="code"><span class="k">const</span> youssef = {
+  role: <span class="s">"Full Stack Engineer"</span>,
+  stack: [<span class="s">"Angular"</span>, <span class="s">"Java"</span>, <span class="s">".NET"</span>, <span class="s">"Python"</span>],
+  infra: [<span class="s">"Azure"</span>, <span class="s">"Docker"</span>, <span class="s">"K8s"</span>],
+  lab: [<span class="s">"Ovlik"</span>, <span class="s">"edge AI"</span>, <span class="s">"UE5"</span>],
+  base: <span class="s">"Grenoble, FR"</span>,
+};</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== À PROPOS ===================== -->
+    <section id="apropos" class="section">
+      <div class="container about">
+        <div class="about__photo reveal">
+          <div class="photo-frame">
+            <img src="assets/photo.jpg" alt="Portrait de Youssef El Kasri" width="900" height="777" loading="lazy">
+            <span class="photo-frame__badge">// depuis 2022 @ Micromedia</span>
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">01. à_propos</p>
+          <h2 class="section-title">Généraliste par choix, rigoureux par habitude.</h2>
+          <p class="lead">Ingénieur full stack diplômé d'un Master Génie Logiciel à l'Université Grenoble Alpes, je travaille sur toute la chaîne : interfaces Angular, back-ends Java et .NET, applications mobiles hybrides avec Flutter et Ionic, sites e-commerce Symfony/Sylius, conteneurisation et déploiement continu.</p>
+          <p class="lead">En dehors du travail, je construis des projets qui touchent au matériel, à l'IA locale et au jeu vidéo : un robot compagnon pour enfants, un RTS sous Unreal Engine 5 et un jeu de plateforme multijoueur.</p>
+          <div class="facts">
+            <div class="fact"><strong>7</strong><span>expériences</span></div>
+            <div class="fact"><strong>Bac+5</strong><span>Génie logiciel</span></div>
+            <div class="fact"><strong>3</strong><span>langues : FR · AR · EN</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STACK ===================== -->
+    <section id="stack" class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02. stack</p>
+          <h2 class="section-title">Ma stack technique</h2>
+          <p class="lead">Survolez une carte pour la mettre au premier plan.</p>
+        </div>
+        <div class="grid-3d grid-3d--skills">
+          <article class="card3d"><div class="card3d__top"><span>01</span><span class="accent">lang</span></div><h3>Langages</h3>
+            <div class="chips"><span class="chip">C</span><span class="chip">C++</span><span class="chip">C#</span><span class="chip">Java</span><span class="chip">Python</span><span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span></div></article>
+          <article class="card3d"><div class="card3d__top"><span>02</span><span class="accent">front</span></div><h3>Front & mobile</h3>
+            <div class="chips"><span class="chip">Angular</span><span class="chip">Ionic</span><span class="chip">Flutter</span><span class="chip">Capacitor</span><span class="chip">jQuery</span><span class="chip">Bootstrap</span><span class="chip">Twig</span></div></article>
+          <article class="card3d"><div class="card3d__top"><span>03</span><span class="accent">back</span></div><h3>Back-end & temps réel</h3>
+            <div class="chips"><span class="chip">.NET</span><span class="chip">Symfony</span><span class="chip">Sylius</span><span class="chip">Doctrine ORM</span><span class="chip">Node.js</span><span class="chip">WebSocket</span><span class="chip">API REST</span><span class="chip">Firebase</span></div></article>
+          <article class="card3d"><div class="card3d__top"><span>04</span><span class="accent">devops</span></div><h3>Infrastructure & outils</h3>
+            <div class="chips"><span class="chip">Azure</span><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">GitHub Actions</span><span class="chip">Maven</span><span class="chip">JUnit</span><span class="chip">JaCoCo</span></div></article>
+          <article class="card3d"><div class="card3d__top"><span>05</span><span class="accent">ia</span></div><h3>IA & vision</h3>
+            <div class="chips"><span class="chip">Ollama</span><span class="chip">LLM local (Qwen2.5)</span><span class="chip">faster-whisper</span><span class="chip">Piper TTS</span><span class="chip">OpenCV</span><span class="chip">Prompt engineering</span></div></article>
+          <article class="card3d"><div class="card3d__top"><span>06</span><span class="accent">gamedev</span></div><h3>Jeu vidéo & 3D</h3>
+            <div class="chips"><span class="chip">Unreal Engine 5</span><span class="chip">HTML5 Canvas</span><span class="chip">Web Audio API</span><span class="chip">pygame</span><span class="chip">CAO paramétrique</span><span class="chip">Impression 3D</span></div></article>
+          <article class="card3d"><div class="card3d__top"><span>07</span><span class="accent">embedded</span></div><h3>Embarqué & IoT</h3>
+            <div class="chips"><span class="chip">ESP32-S3</span><span class="chip">Arduino (C++)</span><span class="chip">Audio I2S</span><span class="chip">Servomoteurs</span><span class="chip">Raspberry Pi 5</span></div></article>
+          <article class="card3d"><div class="card3d__top"><span>08</span><span class="accent">web</span></div><h3>Web</h3>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">SCSS</span><span class="chip">AJAX</span><span class="chip">PWA</span><span class="chip">WordPress</span><span class="chip">CI/CD</span></div></article>
+          <article class="card3d"><div class="card3d__top"><span>09</span><span class="accent">archi</span></div><h3>Autres</h3>
+            <div class="chips"><span class="chip">Full stack</span><span class="chip">Architecture logicielle</span><span class="chip">Mobile hybride</span><span class="chip">IA responsable</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARCOURS ===================== -->
+    <section id="parcours" class="section">
+      <div class="container journey">
+        <div class="journey__main reveal">
+          <p class="eyebrow">03. parcours</p>
+          <h2 class="section-title">git log --experience</h2>
+          <p class="journey__sub">7 entrées · de la plus récente à la plus ancienne</p>
+          <ol>
+            <li class="job job--current"><div class="job__rail"><span class="job__dot"></span><span class="job__line"></span></div>
+              <div class="job__body"><span class="job__date">sept. 2022 → aujourd'hui</span><h3 class="job__title">Ingénieur Full Stack <span class="badge badge--live">HEAD → en poste</span></h3><p class="job__company"><b>Micromedia International</b> · Meylan, France</p></div></li>
+            <li class="job"><div class="job__rail"><span class="job__dot"></span><span class="job__line"></span></div>
+              <div class="job__body"><span class="job__date">mai 2022 → août 2022</span><h3 class="job__title">Développeur Web <span class="badge">stage</span></h3><p class="job__company"><b>3C-Evolution — Agence PIM &amp; Web</b> · Grenoble, France</p></div></li>
+            <li class="job"><div class="job__rail"><span class="job__dot"></span><span class="job__line"></span></div>
+              <div class="job__body"><span class="job__date">avr. 2021 → juil. 2021</span><h3 class="job__title">Développeur Web <span class="badge">stage</span></h3><p class="job__company"><b>DBIOTECH</b> · Paris, France</p></div></li>
+            <li class="job"><div class="job__rail"><span class="job__dot"></span><span class="job__line"></span></div>
+              <div class="job__body"><span class="job__date">mai 2020 → août 2020</span><h3 class="job__title">Développeur Full Stack</h3><p class="job__company"><b>Savola Group</b> · Berrechid, Maroc</p></div></li>
+            <li class="job"><div class="job__rail"><span class="job__dot"></span><span class="job__line"></span></div>
+              <div class="job__body"><span class="job__date">janv. 2020 → avr. 2020</span><h3 class="job__title">Développeur Web</h3><p class="job__company"><b>Call Connection</b> · Rabat-Salé-Kénitra, Maroc</p></div></li>
+            <li class="job"><div class="job__rail"><span class="job__dot"></span><span class="job__line"></span></div>
+              <div class="job__body"><span class="job__date">avr. 2019 → mai 2019</span><h3 class="job__title">Développeur PHP <span class="badge">stage</span></h3><p class="job__company"><b>Office National de l'Électricité et de l'Eau Potable — Branche Électricité</b> · Laâyoune, Maroc</p></div></li>
+            <li class="job"><div class="job__rail"><span class="job__dot"></span><span class="job__line"></span></div>
+              <div class="job__body"><span class="job__date">avr. 2018 → mai 2018</span><h3 class="job__title">Développeur Web <span class="badge">stage</span></h3><p class="job__company"><b>OCP Group</b> · Laâyoune, Maroc</p></div></li>
+          </ol>
+        </div>
+        <div class="journey__side reveal">
+          <p class="eyebrow">formation</p>
+          <h2 class="section-title" style="margin-bottom: 56px">Diplômes</h2>
+          <div class="degrees">
+            <div class="degree"><span class="degree__date">2021 → 2023</span><h3>Master Informatique — Génie Logiciel</h3><p>Université Grenoble Alpes</p></div>
+            <div class="degree"><span class="degree__date">2020 → 2021</span><h3>Licence Informatique</h3><p>Université de Picardie Jules Verne (UPJV)</p></div>
+            <div class="degree"><span class="degree__date">2018 → 2019</span><h3>Licence — Systèmes d'Information et Big Data</h3><p>École Supérieure de Technologie de Salé</p></div>
+            <div class="degree"><span class="degree__date">2016 → 2018</span><h3>DUT Génie Informatique — Génie Logiciel</h3><p>École Supérieure de Technologie de Meknès (ESTM)</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETS ===================== -->
+    <section id="projets" class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04. projets</p>
+          <h2 class="section-title">Réalisations choisies</h2>
+          <p class="lead">Cliquez sur un projet pour ouvrir son étude de cas.</p>
+        </div>
+
+        <div class="subhead"><p>// side projects</p><h3>Projets personnels</h3></div>
+
+        <div class="grid-3d grid-3d--projects">
+          <button type="button" class="card3d project-card" data-project="ovlik" aria-expanded="false" aria-controls="detail-ovlik">
+            <span class="card3d__top"><span class="accent">robotique × IA locale</span><span>01</span></span>
+            <span class="project-card__title">Ovlik</span>
+            <span class="project-card__tagline">Un robot compagnon éducatif pour enfants, avec une IA 100 % locale.</span>
+            <span class="chips"><span class="chip chip--sm">Python</span><span class="chip chip--sm">ESP32-S3</span><span class="chip chip--sm">LLM local</span><span class="chip chip--sm">Impression 3D</span></span>
+            <span class="project-card__cta"><span class="cta-label">voir le projet</span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+          </button>
+          <button type="button" class="card3d project-card" data-project="frontier" aria-expanded="false" aria-controls="detail-frontier">
+            <span class="card3d__top"><span class="accent">jeu mobile · RTS</span><span>02</span></span>
+            <span class="project-card__title">Frontier</span>
+            <span class="project-card__tagline">Un jeu de stratégie en temps réel western pour mobile.</span>
+            <span class="chips"><span class="chip chip--sm">Unreal Engine 5</span><span class="chip chip--sm">C++</span><span class="chip chip--sm">Android · iOS</span></span>
+            <span class="project-card__cta"><span class="cta-label">voir le projet</span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+          </button>
+          <button type="button" class="card3d project-card" data-project="devil" aria-expanded="false" aria-controls="detail-devil">
+            <span class="card3d__top"><span class="accent">jeu de plateforme · en ligne</span><span>03</span></span>
+            <span class="project-card__title">Devil's Path</span>
+            <span class="project-card__tagline">Un jeu de plateforme « troll » où le niveau lui-même est l'ennemi.</span>
+            <span class="chips"><span class="chip chip--sm">JavaScript</span><span class="chip chip--sm">Canvas</span><span class="chip chip--sm">Node.js</span><span class="chip chip--sm">WebSocket</span></span>
+            <span class="project-card__cta"><span class="cta-label">voir le projet</span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+          </button>
+        </div>
+
+        <!-- ---------- Détail : Ovlik ---------- -->
+        <div class="detail" id="detail-ovlik" hidden>
+          <button type="button" class="detail__close" data-close>
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg> Fermer le projet
+          </button>
+          <article class="case" aria-labelledby="ovlik-title">
+            <div class="case__head">
+              <div class="case__intro">
+                <div class="chips"><span class="tag tag--accent">projet personnel</span><span class="tag">robotique × IA locale</span><span class="tag">conçu de A à Z</span></div>
+                <h3 id="ovlik-title" class="case__title">Ovlik<span class="accent">.</span></h3>
+                <p class="case__tagline">Un robot compagnon éducatif pour les enfants, avec une IA qui tourne entièrement en local.</p>
+                <p class="lead" style="font-size: 16px">Coque imprimée en 3D, électronique ESP32, firmware embarqué et cerveau IA en Python. Ovlik parle, écoute, reconnaît les membres de la famille, joue, raconte des histoires et aide aux devoirs en français, en anglais et en arabe. Aucune donnée ne quitte la maison : la voix, la vision et le modèle de langage tournent sur le PC familial ou sur un Raspberry Pi 5 caché dans le socle.</p>
+              </div>
+              <div class="case__visual" aria-hidden="true">
+                <div class="robot__shadow"></div>
+                <div class="robot">
+                  <div class="robot__body3d">
+                    <div class="robot__stem"></div><div class="robot__leaf"></div>
+                    <div class="robot__head"><div class="robot__screen"><span class="robot__eye"></span><span class="robot__eye"></span></div></div>
+                    <div class="robot__neck"></div>
+                    <div class="robot__arm robot__arm--l"></div><div class="robot__arm robot__arm--r"></div>
+                    <div class="robot__torso"><span class="robot__navel"></span></div>
+                    <div class="robot__base"><span></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stats">
+              <div class="stat"><strong>~8 300</strong><span>lignes de Python</span></div>
+              <div class="stat"><strong>~900</strong><span>lignes de C++ embarqué</span></div>
+              <div class="stat"><strong>16</strong><span>pièces STL générées par code</span></div>
+              <div class="stat"><strong>~0,2 s</strong><span>pour se taire quand on lui coupe la parole</span></div>
+              <div class="stat"><strong>3</strong><span>langues : français, anglais, arabe</span></div>
+              <div class="stat"><strong>100 %</strong><span>local : aucune donnée ne quitte la maison</span></div>
+            </div>
+            <div class="case__block">
+              <p class="case__label">// architecture</p>
+              <h4 class="case__h">« Le PC est le cerveau, le robot est le corps »</h4>
+              <div class="arch">
+                <div class="arch__node"><small>le corps</small><b>Robot · ESP32-S3</b><p>Ne réfléchit pas : il envoie le son du micro et les événements des capteurs (toucher, chocs, socle), puis joue la voix, le visage, les servos et la LED reçus. Sans PC, il garde ses yeux animés et affiche « je cherche mon cerveau… ».</p></div>
+                <div class="arch__link"><span class="tile__k">WebSocket · Wi-Fi</span><svg aria-hidden="true" width="120" height="24" viewBox="0 0 120 24" fill="none" stroke="#ff8a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h112"/><path d="m10 6-6 6 6 6"/><path d="m110 6 6 6-6 6"/></svg><small>découverte automatique du PC</small></div>
+                <div class="arch__node arch__node--main"><small>le cerveau</small><b>Python · PC ou Raspberry Pi 5</b><p>LLM, voix et vision tournent ici, avec une fenêtre de simulation (pygame) ou en serveur sans affichage. La caméra XIAO ESP32S3 Sense, cachée derrière le nombril, y envoie ses images en Wi-Fi.</p></div>
+                <div class="arch__link"><span class="tile__k">UDP · réseau local</span><svg aria-hidden="true" width="120" height="24" viewBox="0 0 120 24" fill="none" stroke="#ff8a3d" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"><path d="M4 12h112"/></svg><small>les robots se parlent</small></div>
+                <div class="arch__node arch__node--ghost"><small>multi-robots</small><b>Autres Ovlik</b><p>« Fais un bisou à Bobby », « Dansez ensemble ».</p></div>
+              </div>
+            </div>
+            <div class="case__block case__block--pt0">
+              <p class="case__label">// stack</p>
+              <h4 class="case__h">Sous le capot</h4>
+              <div class="tiles">
+                <div class="tile"><span class="tile__k">IA conversationnelle</span><span class="tile__v tile__v--light">Ollama + Qwen2.5 3B en local, réponses lues en streaming phrase par phrase</span></div>
+                <div class="tile"><span class="tile__k">Reconnaissance vocale</span><span class="tile__v tile__v--light">faster-whisper (accélération GPU NVIDIA si disponible), détection de fin de parole</span></div>
+                <div class="tile"><span class="tile__k">Synthèse vocale</span><span class="tile__v tile__v--light">Piper (≈ 0,05 s par phrase, hors ligne), puis edge-tts, puis pyttsx3 : le robot n'est jamais muet</span></div>
+                <div class="tile"><span class="tile__k">Vision</span><span class="tile__v tile__v--light">OpenCV, YuNet (détection) et SFace (reconnaissance), Qwen2.5-VL pour lire les cartes</span></div>
+                <div class="tile"><span class="tile__k">Embarqué</span><span class="tile__v tile__v--light">C++/Arduino sur ESP32-S3 : LovyanGFX, tactile, micro et ampli I2S, 4 servos, NeoPixel, MPU6050</span></div>
+                <div class="tile"><span class="tile__k">CAO 3D</span><span class="tile__v tile__v--light">Modélisation paramétrique en Python (manifold3d + trimesh), 3 générations de modèles (v3 → v5)</span></div>
+                <div class="tile"><span class="tile__k">Divers</span><span class="tile__v tile__v--light">ReportLab (PDF de 83 cartes), websockets, arabic-reshaper/bidi pour l'affichage de l'arabe</span></div>
+              </div>
+            </div>
+            <div class="case__block case__block--top case__block--dark case__cols">
+              <div>
+                <p class="case__label">// fonctionnalités</p>
+                <h4 class="case__h">Ce qu'il sait faire</h4>
+                <ul class="checks">
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Conversation avec interruption</b><span>L'enfant peut lui couper la parole : le robot se tait en ~0,2 s, et mesure l'écho de sa propre voix pour ne pas s'interrompre tout seul.</span></div></li>
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Regard et reconnaissance faciale</b><span>« Coucou Léa ! » Seule une empreinte numérique du visage est gardée, jamais de photo.</span></div></li>
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Une vraie « vie »</b><span>Humeur liée à l'heure, réactions aux sons (sursaute, danse) et au toucher (caresse, chatouilles, câlin). La nuit, il devient veilleuse.</span></div></li>
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Éducatif</b><span>Heure, alphabet, vocabulaire anglais et arabe, jeux tactiles, lecture de cartes par la caméra, histoires dont l'enfant est le héros.</span></div></li>
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Routines</b><span>Brossage des dents avec minuteur et musique, cartable, rangement, avec des étoiles pour récompenser l'enfant.</span></div></li>
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Multi-robots</b><span>Plusieurs Ovlik se parlent sur le réseau local et peuvent jouer ou danser ensemble.</span></div></li>
+                </ul>
+              </div>
+              <div class="highlight">
+                <p class="case__label" style="margin: 0">point fort · securite_enfants.py</p>
+                <h4 class="highlight__h">La sécurité des enfants, conçue dès le départ</h4>
+                <p class="lead" style="font-size: 15px">Un module dédié place des garde-fous autour du LLM.</p>
+                <ol class="numbered">
+                  <li><span class="num">1</span><div><b>Filtre en entrée</b><span>Détresse, maltraitance ou harcèlement : l'IA n'improvise pas. Une réponse écrite à l'avance oriente vers un adulte de confiance et les bons numéros (119, 3020, 3018…).</span></div></li>
+                  <li><span class="num">2</span><div><b>Filtre en sortie</b><span>Gros mots, contenu adulte, demande d'informations personnelles ou de « garder un secret » : bloqués et remplacés.</span></div></li>
+                  <li><span class="num">3</span><div><b>Contrôle parental</b><span>Journal local pour les parents, temps d'écran limité et heure du coucher, déblocables avec un code parent.</span></div></li>
+                  <li><span class="num">4</span><div><b>Vie privée dès la conception</b><span>100 % local : les images sont analysées puis oubliées.</span></div></li>
+                  <li><span class="num">5</span><div><b>Sécurité physique</b><span>Aimants enfermés sous 0,6 mm de plastique, pousse lumineuse vissée par l'intérieur pour ne pas pouvoir être arrachée.</span></div></li>
+                </ol>
+              </div>
+            </div>
+            <div class="case__block case__block--top case__cols">
+              <div>
+                <p class="case__label">// matériel v5</p>
+                <p class="lead" style="font-size: 15px">ESP32-S3 N16R8, écran tactile 3,5" ST7796S, micro INMP441, ampli MAX98357A, 4 servos (cou en cardan et bras), LED RGB dans une « pousse » translucide, zones tactiles en cuivre dans la coque. Socle de recharge intelligent à connecteur pogo magnétique : le robot détecte qu'il est posé et s'endort. Environ 75 € de pièces, ou 155 € avec le Raspberry Pi 5.</p>
+              </div>
+              <div>
+                <p class="case__label">// compétences démontrées</p>
+                <div class="chips"><span class="chip chip--sm">Systèmes embarqués</span><span class="chip chip--sm">LLM &amp; IA locale (edge AI)</span><span class="chip chip--sm">Audio temps réel</span><span class="chip chip--sm">Vision par ordinateur</span><span class="chip chip--sm">Client/serveur temps réel</span><span class="chip chip--sm">CAO paramétrique</span><span class="chip chip--sm">Impression 3D</span><span class="chip chip--sm">Conception électronique</span><span class="chip chip--sm">IA responsable</span><span class="chip chip--sm">UX pour non-lecteurs</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---------- Détail : Frontier ---------- -->
+        <div class="detail" id="detail-frontier" hidden>
+          <button type="button" class="detail__close" data-close>
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg> Fermer le projet
+          </button>
+          <article class="case" aria-labelledby="frontier-title">
+            <div class="case__head case__head--rev">
+              <div class="case__visual" aria-hidden="true">
+                <div class="phone-wrap">
+                  <div class="phone">
+                    <div class="map">
+                      <div class="map__texture"></div>
+                      <div class="map__river"></div>
+                      <div class="map__mesa" style="left: 6%; top: 22%; width: 16%; height: 20%"></div>
+                      <div class="map__mesa" style="right: 8%; bottom: 6%; width: 13%; height: 16%"></div>
+                      <div class="map__ranch" style="left: 30%; top: 30%; border: 2px solid #4cc9f0"></div>
+                      <div class="map__ranch" style="left: 66%; top: 18%; border: 2px solid #e5484d"></div>
+                      <div class="map__pole"></div><div class="map__flag"></div>
+                      <div class="map__zone"></div>
+                      <span class="map__unit" style="left: 52%; top: 36%; background: #4cc9f0"></span>
+                      <span class="map__unit" style="left: 55%; top: 44%; background: #4cc9f0"></span>
+                      <span class="map__unit" style="left: 49%; top: 46%; background: #4cc9f0"></span>
+                      <span class="map__unit" style="left: 70%; top: 46%; background: #e5484d"></span>
+                      <span class="map__cow" style="left: 22%; top: 70%; background: #f4ede0"></span>
+                      <span class="map__cow" style="left: 26%; top: 76%; background: #3a2a1d"></span>
+                      <span class="map__cow" style="left: 30%; top: 72%; background: #f4ede0"></span>
+                      <div class="map__hud"><span>bétail</span>·<span>bois</span>·<span>or</span>·<span>dollars</span>·<span>eau</span></div>
+                      <div class="map__btn">Prendre le ranch</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case__intro">
+                <div class="chips"><span class="tag tag--accent">projet personnel</span><span class="tag">jeu mobile · RTS</span><span class="tag">Unreal Engine 5 · C++</span></div>
+                <h3 id="frontier-title" class="case__title">Frontier<span class="accent">.</span></h3>
+                <p class="case__tagline">Un jeu de stratégie en temps réel western pour mobile, sous Unreal Engine 5.</p>
+                <p class="lead" style="font-size: 16px">Un RTS en 3D vu de dessus, dans l'univers du Far West, pensé d'abord pour Android puis pour iPhone. Le joueur part d'un simple campement et doit devenir le baron le plus puissant de la vallée, en prenant les ranches du territoire au baron Clayton, contrôlé par l'IA.</p>
+              </div>
+            </div>
+            <div class="stats">
+              <div class="stat"><strong>≈ 19 000</strong><span>lignes de C++ sous Unreal Engine 5.8</span></div>
+              <div class="stat"><strong>30+</strong><span>classes de gameplay</span></div>
+              <div class="stat"><strong>12</strong><span>missions en 3 actes, écrites en JSON</span></div>
+              <div class="stat"><strong>17</strong><span>types d'objectifs de mission</span></div>
+              <div class="stat"><strong>15</strong><span>tables d'équilibrage CSV</span></div>
+              <div class="stat"><strong>11</strong><span>tests automatisés Unreal</span></div>
+            </div>
+            <div class="case__block">
+              <p class="case__label">// mécanique centrale</p>
+              <h4 class="case__h" style="margin-bottom: 12px">Trois façons de prendre un ranch</h4>
+              <p class="lead" style="font-size: 15px; margin-bottom: 32px">Un ranch pris devient une nouvelle base, qui élève du bétail et recrute des unités.</p>
+              <div class="grid-3d" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+                <div class="card3d" style="background: var(--bg-2); gap: 12px"><span class="card3d__top">01</span><span class="project-card__title" style="font-size: 34px">La force</span><span class="tile__v">Tuer les gardes, puis tenir la position près du drapeau.</span></div>
+                <div class="card3d" style="background: var(--bg-2); gap: 12px"><span class="card3d__top">02</span><span class="project-card__title" style="font-size: 34px">L'argent</span><span class="tile__v">Racheter le ranch.</span></div>
+                <div class="card3d" style="background: var(--bg-2); gap: 12px"><span class="card3d__top">03</span><span class="project-card__title" style="font-size: 34px">La ruse</span><span class="tile__v">Voler son bétail.</span></div>
+              </div>
+            </div>
+            <div class="case__block case__block--pt0">
+              <p class="case__label">// progression</p>
+              <h4 class="case__h">4 époques à traverser</h4>
+              <ol class="tiles" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px">
+                <li class="tile"><span class="tile__k">I</span><span class="project-card__title" style="font-size: 20px">Campement</span></li>
+                <li class="tile"><span class="tile__k">II</span><span class="project-card__title" style="font-size: 20px">Ville frontière</span></li>
+                <li class="tile"><span class="tile__k">III</span><span class="project-card__title" style="font-size: 20px">Chemin de fer</span></li>
+                <li class="tile"><span class="tile__k">IV</span><span class="project-card__title" style="font-size: 20px">Empire</span></li>
+              </ol>
+              <p class="lead" style="font-size: 14.5px; margin-top: 16px">Chaque passage d'époque débloque des recherches et des technologies.</p>
+            </div>
+            <div class="case__block case__block--top case__block--dark case__cols">
+              <div>
+                <p class="case__label">// gameplay</p>
+                <h4 class="case__h">Dans la partie</h4>
+                <ul class="checks">
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Économie à 5 ressources</b><span>Bétail, bois, or, dollars et eau. Les cowboys récoltent puis déposent au camp ; une sécheresse fait mourir le bétail des ranches privés d'eau.</span></div></li>
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Unités</b><span>Cowboy, pistolero, cavalier, Gatling, et un héros : le shérif.</span></div></li>
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Événements scénarisés</b><span>Attaque de train, duel au pistolet entre le shérif et Le Kid, primes et chasseurs de primes, choix moraux Loi / Hors-la-loi qui changent la réputation.</span></div></li>
+                  <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ee0a1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><div><b>Méta-progression</b><span>Profil joueur à 50 niveaux et titres, défis de la semaine et contrats (diligence, mustangs, rodéo…), étoiles et meilleurs temps par mission, 3 emplacements de sauvegarde.</span></div></li>
+                </ul>
+              </div>
+              <div class="highlight">
+                <p class="case__label" style="margin: 0">sous le capot</p>
+                <h4 class="highlight__h">Un jeu piloté par les données</h4>
+                <ul class="techlist">
+                  <li><span class="tile__k">Moteur</span><span class="tile__v tile__v--light">Unreal Engine 5.8, ≈ 19 000 lignes de C++ réparties dans plus de 30 classes de gameplay</span></li>
+                  <li><span class="tile__k">Campagne</span><span class="tile__v tile__v--light">« La Vallée de Dust Creek » : 12 missions en JSON, 17 types d'objectifs, moteur de déclencheurs et dialogues</span></li>
+                  <li><span class="tile__k">Équilibrage</span><span class="tile__v tile__v--light">15 tables CSV : unités, bâtiments, âges, technologies, IA, XP…</span></li>
+                  <li><span class="tile__k">IA adverse</span><span class="tile__v tile__v--light">Le baron Clayton, avec 5 niveaux de difficulté</span></li>
+                  <li><span class="tile__k">Qualité</span><span class="tile__v tile__v--light">11 tests avec le framework d'automatisation d'Unreal, outils Python de validation et de pipeline</span></li>
+                  <li><span class="tile__k">Plateformes</span><span class="tile__v tile__v--light">Android d'abord, puis iPhone</span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---------- Détail : Devil's Path ---------- -->
+        <div class="detail" id="detail-devil" hidden>
+          <button type="button" class="detail__close" data-close>
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg> Fermer le projet
+          </button>
+          <article class="case" aria-labelledby="devil-title">
+            <div class="case__head">
+              <div class="case__intro">
+                <div class="chips"><span class="tag tag--accent">projet personnel</span><span class="tag">jeu de plateforme · multijoueur</span><span class="tag">JavaScript · Node.js · Capacitor</span></div>
+                <h3 id="devil-title" class="case__title">Devil's Path<span class="accent">.</span></h3>
+                <p class="case__tagline">Un jeu de plateforme « troll » où le niveau lui-même est l'ennemi, avec des courses en ligne.</p>
+                <p class="lead" style="font-size: 16px">Le sol s'effondre sous tes pieds, la porte de sortie s'enfuit, des pics apparaissent de nulle part, la gravité s'inverse. On ne gagne qu'en apprenant de ses morts, sous les moqueries du Diable. Une seule base de code tourne sur Android, iPhone et navigateur, avec un éditeur de niveaux et des courses en ligne jusqu'à 8 joueurs.</p>
+              </div>
+              <div class="case__visual" aria-hidden="true">
+                <div class="dp-wrap">
+                  <div class="dp">
+                    <div class="dp__grid"></div>
+                    <div class="dp__bubble">Tu apprends vite… à mourir.</div>
+                    <div class="dp__deaths">morts : ∞</div>
+                    <div class="dp__floor"><span></span><span></span><span></span><span class="crumble"></span><span class="crumble late"></span><span class="gap"></span><span></span><span></span></div>
+                    <div class="dp__spikes"><span></span><span></span><span></span></div>
+                    <div class="dp__platform"></div>
+                    <div class="dp__player"><span></span></div>
+                    <div class="dp__door"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stats">
+              <div class="stat"><strong>12</strong><span>niveaux dans le Monde 1</span></div>
+              <div class="stat"><strong>10</strong><span>missions du Diable + défis du jour</span></div>
+              <div class="stat"><strong>10</strong><span>outils dans l'éditeur de niveaux</span></div>
+              <div class="stat"><strong>8</strong><span>joueurs par salon en course en ligne</span></div>
+              <div class="stat"><strong>2 min</strong><span>par course multijoueur</span></div>
+              <div class="stat"><strong>~130</strong><span>lignes pour le serveur Node.js</span></div>
+            </div>
+            <div class="case__block case__cols">
+              <div>
+                <p class="case__label">// le cœur du design</p>
+                <h4 class="case__h" style="margin-bottom: 16px">Des pièges déclaratifs</h4>
+                <p class="lead" style="font-size: 15.5px; margin-bottom: 18px">Chaque niveau est un objet de données, pas du code : on y décrit le décor et une liste d'événements « déclencheur → actions », chacun avec un délai possible. On crée un nouveau piège sans écrire une ligne de code.</p>
+                <p class="tile__k" style="color: var(--dim); margin-bottom: 10px">7 déclencheurs</p>
+                <div class="chips" style="margin-bottom: 16px"><span class="chip chip--sm">position</span><span class="chip chip--sm">retour en arrière</span><span class="chip chip--sm">proximité</span><span class="chip chip--sm">temps écoulé</span><span class="chip chip--sm">immobilité</span><span class="chip chip--sm">drapeau</span><span class="chip chip--sm">fausse sortie</span></div>
+                <p class="tile__k" style="color: var(--dim); margin-bottom: 10px">10 actions, dont</p>
+                <div class="chips"><span class="chip chip--sm chip--accent">faire tomber le sol</span><span class="chip chip--sm chip--accent">faire apparaître des pics</span><span class="chip chip--sm chip--accent">lancer un projectile</span><span class="chip chip--sm chip--accent">écraser avec le plafond</span><span class="chip chip--sm chip--accent">inverser les contrôles</span><span class="chip chip--sm chip--accent">changer la gravité</span><span class="chip chip--sm chip--accent">dialogue</span><span class="chip chip--sm chip--accent">bannière</span></div>
+              </div>
+              <div style="perspective: 1200px; display: flex; align-items: center">
+                <div class="window" style="width: 100%; transform: rotateY(-10deg) rotateX(4deg)">
+                  <div class="window__bar"><span class="window__dot"></span><span class="window__dot"></span><span class="window__dot"></span><span class="window__title">niveau-03.js</span></div>
+<pre class="code" style="font-size: 13px"><span class="c">// quand x ≥ 12, le sol tombe</span>
+events: [
+  {
+    w:  { x: <span class="n">12</span> },
+    do: [{ a: <span class="s">'drop'</span>, r: [<span class="n">15</span>, <span class="n">18</span>, <span class="n">15</span>, <span class="n">17</span>] }]
+  }
+]</pre>
+                </div>
+              </div>
+            </div>
+            <div class="case__block case__block--top case__block--dark">
+              <p class="case__label">// ce que j'ai construit</p>
+              <h4 class="case__h">Du moteur au Play Store</h4>
+              <div class="tiles" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))">
+                <div class="tile" style="background: var(--card)"><span class="tile__k">01 · moteur</span><span class="tile__t">Moteur de jeu 2D maison (Canvas)</span><span class="tile__v">Gravité, saut à hauteur variable, chute limitée, blocs rebondissants ; collisions résolues sur X puis sur Y, sur une grille de 32 × 18. Rendu procédural et mise à l'échelle 16:9 pour chaque écran.</span></div>
+                <div class="tile" style="background: var(--card)"><span class="tile__k">02 · audio</span><span class="tile__t">Sons 100 % synthétisés</span><span class="tile__v">Effets sonores générés avec la Web Audio API (oscillateurs et enveloppes), sans aucun fichier audio.</span></div>
+                <div class="tile" style="background: var(--card)"><span class="tile__k">03 · éditeur</span><span class="tile__t">Éditeur et partage de niveaux</span><span class="tile__v">Édition à la souris ou au doigt, sérialisation en un code texte versionné (DP1:…) à copier-coller, ou publication sur le serveur.</span></div>
+                <div class="tile" style="background: var(--card)"><span class="tile__k">04 · réseau</span><span class="tile__t">Multijoueur temps réel</span><span class="tile__v">Serveur Node.js + WebSocket : salons protégés par code, hôte, synchronisation des positions, adversaires en « fantômes », classement. API REST avec identifiants générés de façon cryptographiquement sûre et protection contre la traversée de répertoires.</span></div>
+                <div class="tile" style="background: var(--card)"><span class="tile__k">05 · mobile</span><span class="tile__t">Packaging et publication</span><span class="tile__v">Capacitor 8 pour Android et iOS, PWA, wss:// obligatoire en production. Préparation Play Store : fiche, questionnaire IARC, sécurité des données, politique de confidentialité.</span></div>
+              </div>
+              <div class="chips" style="margin-top: 28px"><span class="chip chip--sm">JavaScript ES2020+</span><span class="chip chip--sm">HTML5 Canvas</span><span class="chip chip--sm">Web Audio API</span><span class="chip chip--sm">Node.js</span><span class="chip chip--sm">WebSocket</span><span class="chip chip--sm">API REST</span><span class="chip chip--sm">PWA</span><span class="chip chip--sm">Capacitor 8</span><span class="chip chip--sm">Android Studio / Gradle</span></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---------- Projets d'études ---------- -->
+        <div class="subhead" style="margin-top: 96px"><p>// cursus universitaire</p><h3>Projets d'études</h3></div>
+        <div class="grid-3d grid-3d--studies">
+          <article class="card3d study">
+            <div class="card3d__top"><span class="accent">Master · en équipe</span><span>2023</span></div>
+            <h4>Chat mobile</h4>
+            <p class="study__tagline">Une application de discussion mobile à la Discord : groupes, invitations et droits par utilisateur.</p>
+            <div class="chips"><span class="chip chip--sm">Ionic 6</span><span class="chip chip--sm">Angular 15</span><span class="chip chip--sm">TypeScript</span><span class="chip chip--sm">Firebase</span><span class="chip chip--sm">Capacitor</span></div>
+            <div class="study__more" id="study-1" hidden>
+              <ul class="study__points">
+                <li>Groupes de discussion avec invitations et droits de lecture ou d'écriture par membre</li>
+                <li>Messages en temps réel et notifications d'invitation avec Cloud Firestore</li>
+                <li>Connexion e-mail avec vérification, Google, Facebook et GitHub, mot de passe oublié</li>
+                <li>Livrée en PWA sur Firebase Hosting et en APK Android via Capacitor</li>
+              </ul>
+              <a class="study__link" href="https://chat-be-125f4.web.app/" target="_blank" rel="noopener">démo PWA ↗</a>
+            </div>
+            <button type="button" class="study__toggle" aria-expanded="false" aria-controls="study-1"><span class="toggle-label">voir le détail</span><span aria-hidden="true" class="toggle-icon">+</span></button>
+          </article>
+          <article class="card3d study">
+            <div class="card3d__top"><span class="accent">UGA · équipe de 3</span><span>2022</span></div>
+            <h4>DataFrame</h4>
+            <p class="study__tagline">Une bibliothèque Java de manipulation de données tabulaires, livrée avec une chaîne DevOps complète.</p>
+            <div class="chips"><span class="chip chip--sm">Java</span><span class="chip chip--sm">Maven</span><span class="chip chip--sm">JUnit</span><span class="chip chip--sm">JaCoCo</span><span class="chip chip--sm">GitHub Actions</span><span class="chip chip--sm">Docker</span></div>
+            <div class="study__more" id="study-2" hidden>
+              <ul class="study__points">
+                <li>Création depuis un CSV ou un tableau, insertion de lignes et de colonnes, sélection par colonnes ou par indices</li>
+                <li>Statistiques par colonne : somme, moyenne, min, max, comptage, valeur absolue</li>
+                <li>CI GitHub Actions : build Maven, tests JUnit, couverture JaCoCo, image Docker poussée sur Docker Hub</li>
+                <li>97,4 % de couverture de lignes et 92,2 % des branches, revue CodeFactor, JavaDoc en ligne</li>
+              </ul>
+              <a class="study__link" href="https://youssefelkasri.github.io/Dataframe/GroupeY/package-summary.html" target="_blank" rel="noopener">JavaDoc ↗</a>
+            </div>
+            <button type="button" class="study__toggle" aria-expanded="false" aria-controls="study-2"><span class="toggle-label">voir le détail</span><span aria-hidden="true" class="toggle-icon">+</span></button>
+          </article>
+          <article class="card3d study">
+            <div class="card3d__top"><span class="accent">Projet d'études</span><span>2021</span></div>
+            <h4>Cineland</h4>
+            <p class="study__tagline">Une application web de gestion d'une cinémathèque : films, acteurs et genres.</p>
+            <div class="chips"><span class="chip chip--sm">PHP</span><span class="chip chip--sm">Symfony 5</span><span class="chip chip--sm">Doctrine ORM</span><span class="chip chip--sm">Twig</span><span class="chip chip--sm">AJAX</span><span class="chip chip--sm">Bootstrap</span></div>
+            <div class="study__more" id="study-3" hidden>
+              <ul class="study__points">
+                <li>CRUD complet des films, acteurs et genres avec les formulaires et la validation Symfony</li>
+                <li>Modèle Doctrine : films ↔ acteurs en plusieurs-à-plusieurs, chaque film rattaché à un genre</li>
+                <li>Requêtes métier avec le QueryBuilder Doctrine et barres de recherche (films par acteur, par genre…)</li>
+                <li>Interface Twig et Bootstrap, avec des chargements en AJAX</li>
+              </ul>
+            </div>
+            <button type="button" class="study__toggle" aria-expanded="false" aria-controls="study-3"><span class="toggle-label">voir le détail</span><span aria-hidden="true" class="toggle-icon">+</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section dots-bg">
+      <div class="container contact">
+        <div class="contact__text reveal">
+          <p class="eyebrow">05. contact</p>
+          <h2 class="contact__title">Construisons quelque chose<span class="accent">.</span></h2>
+          <p class="lead" style="max-width: 520px; font-size: 18px">Un poste, une mission ou simplement une question technique : ma boîte mail est ouverte.</p>
+          <div><a href="mailto:elkasri.youssef@outlook.fr" class="btn btn--primary">Dire bonjour
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></div>
+        </div>
+        <div class="contact__term reveal">
+          <div class="window">
+            <div class="window__bar"><span class="window__dot"></span><span class="window__dot"></span><span class="window__dot"></span><span class="window__title">zsh — contact</span></div>
+            <div class="term">
+              <div><div><span class="p">➜</span> <span class="cmd">contact --email</span></div><a href="mailto:elkasri.youssef@outlook.fr">elkasri.youssef@outlook.fr</a></div>
+              <div><div><span class="p">➜</span> <span class="cmd">contact --phone</span></div><a href="tel:+33767304935">+33 7 67 30 49 35</a></div>
+              <div><div><span class="p">➜</span> <span class="cmd">contact --linkedin</span></div><a href="https://www.linkedin.com/in/youssefelkasri-67bb79180" target="_blank" rel="noopener">linkedin.com/in/youssefelkasri-67bb79180</a></div>
+              <div><div><span class="p">➜</span> <span class="cmd">location</span></div><span style="color: var(--muted)">Grenoble, France</span></div>
+              <div><span class="p">➜</span> <span class="caret" aria-hidden="true"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> Youssef El Kasri</span>
+      <span>conçu et développé à Grenoble</span>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
